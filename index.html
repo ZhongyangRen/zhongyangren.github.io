@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Zhongyang Ren is currently a MPhil student at Hunan University and he will join a Ph.D program in Northwestern Polytechnical University.">
-  <meta name="keywords" content="Zhongyang Ren, 任重阳, renzhongyang, HNU, 湖南大学机器人学院, School of Robotics, cs.ai.ro, cs.cv">
+  <meta name="keywords" content="Zhongyang Ren, 任重阳, 西北工业大学, renzhongyang, HNU, 湖南大学机器人学院, School of Robotics, cs.ai.ro, cs.cv">
   <meta name="author" content="Zhongyang Ren" />
 
   <link rel="stylesheet" href="w3.css">
@@ -104,8 +104,9 @@
 <!-- The News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>News</h2>
+      <p><li> 01/2026, Our paper "Real-time Motion Segmentation with Event-based Normal Flow" is accepted by ICRA 2026.</li></p>
       <p><li> 06/2025, I was admitted to a Ph.D program in Northwestern Polytechnical University.</li></p>
-       <p><li> 07/2024, Our paper <a href="https://nail-hnu.github.io/EvLinearSolver/">"Motion and Sturcture from Event-based Normal Flow</a>" is accepted by ECCV 2024.</li></p>
+      <p><li> 07/2024, Our paper "<a href="https://nail-hnu.github.io/EvLinearSolver/"></a>Motion and Sturcture from Event-based Normal Flow</a>" is accepted by ECCV 2024.</li></p>
       <p><li> 02/2023, I joined Neuromorphic Automation and Intelligence Lab at Hunan University.</li></p>
       <p><li> 06/2022, I graduated from Shandong Normal University and received my Bachelor's degree in computer science and technology.</li></p>
       <!-- <p><li> 09/2021, I was admitted to <a href="http://robotics.hnu.edu.cn/index.htm">School of Robotics, Hunan University</a>.</li></p> -->
@@ -122,7 +123,16 @@
   <div class="w3-container w3-padding-32"" id="publications">
     <h2>Research</h2>
       	<!--<p class="w3-left-align" style="line-height:200%"></p>-->
-	<h4><li><strong>ECCV 2024: </strong><a href="https://nail-hnu.github.io/EvLinearSolver/">Motion and Structure from Event-based Normal Flow</a> 
+<h4><li><strong>ECCV 2024: </strong><a href="">Real-time Motion Segmentation with Event-based Normal Flow</a> 
+		[<a href="">Video</a>] [<a href="">PDF</a>]</li></h4>
+    <!-- <img style="width:100%;" src="images/EvLinearSolver.png"> &nbsp&nbsp  -->
+	  <p>Event-based cameras are bio-inspired sensors with pixels that independently and asynchronously respond to brightness changes at microsecond resolution, offering the potential to handle visual tasks in challenging scenarios.
+However, due to the sparse information content in individual events, directly processing the raw event data to solve vision tasks is highly inefficient, which severely limits the applicability of state-of-the-art methods in real-time tasks, such as motion segmentation—a fundamental task for dynamic scene understanding.
+Incorporating normal flow as an intermediate representation to compress motion information from event clusters within a localized region provides a more effective solution. 
+In this work, we propose a normal flow-based motion segmentation framework for event-based vision.Leveraging the dense normal flow directly learned from event neighborhoods as input, we formulate the motion segmentation task as an energy minimization problem solved via graph cuts, and optimize it iteratively with normal flow clustering and motion model fitting. 
+By using a normal flow-based motion model initialization and fitting method, the proposed system is able to efficiently estimate the motion models of independently moving objects with only a limited number of candidate models, which significantly reduces the computational complexity and ensures real-time performance, achieving nearly a 800X speedup in comparison to the open-source state-of-the-art method. Extensive evaluations on multiple public datasets fully demonstrate the accuracy and efficiency of our framework.</p>
+	
+  <h4><li><strong>ECCV 2024: </strong><a href="https://nail-hnu.github.io/EvLinearSolver/">Motion and Structure from Event-based Normal Flow</a> 
 		[<a href="https://www.youtube.com/watch?v=2RzSa9pC-7A">Video</a>] [<a href="https://arxiv.org/pdf/2407.12239">PDF</a>]</li></h4>
     <img style="width:100%;" src="images/EvLinearSolver.png"> &nbsp&nbsp 
 	  <p>Recovering the camera motion and scene geometry from visual data is a fundamental problem in the field of computer vision. 
