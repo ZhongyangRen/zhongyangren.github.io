@@ -12,6 +12,7 @@
   <meta name="author" content="Zhongyang Ren" />
 
   <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="stylesheet.css">
 
   <style>
   .w3-sidebar a {font-family: "Roboto", sans-serif}
@@ -57,7 +58,7 @@
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:190px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
-    <h3><b>Zhongyang</b></h3>
+    <h3><b>Renzy</b></h3>
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
@@ -72,7 +73,7 @@
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24">Zhongyang</div>
+  <div class="w3-bar-item w3-padding-24">Renzy</div>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
   </div>
 </header>
@@ -88,23 +89,27 @@
 
 <!-- The Home Section -->
     <div class="w3-container w3-center w3-padding-32" id="home">
-      <img style="width: 80%; max-width: 500px" alt="profile photo" src="images/EastLake1.jpg">
-      <h1>Zhongyang Ren</h1>
-        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-        &nbsp&nbspI am a Ph.D. student at Northwestern Polytechnical University, advised by Prof. <a href="http://npu-cvr.cn">Yuchao Dai</a> and working closely with Prof. <a href="https://scholar.google.com/citations?user=c6As1PcAAAAJ&hl=zh-CN">Bin Fan</a>. 
-        Currently, I am dedicated to developing <strong>foundation models for event-based vision</strong>. 
+      <div class="hero-photo">
+        <img alt="profile photo" src="images/postgrad.jpg">
+      </div>
+      <div class="hero-copy">
+        <p class="hero-kicker">Ph.D. Student · Event-based Vision</p>
+        <h2>Zhongyang Ren (任重阳)</h2>
+        <p class="w3-justify">
+          I am a Ph.D. student at Northwestern Polytechnical University (西北工业大学), advised by Prof. <a href="https://scholar.google.com/citations?user=fddAbqsAAAAJ&hl=en">Yuchao Dai</a> (<a href="http://npu-cvr.cn">戴玉超</a>)  and working closely with Prof. <a href="https://scholar.google.com/citations?user=c6As1PcAAAAJ&hl=zh-CN">Bin Fan</a> (樊斌). 
+          Currently, I am dedicated to developing <strong>foundation models for event-based vision</strong>. 
         </p>
-        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-        &nbsp&nbsp My research journey has been consistently focused on <strong>event-based vision</strong> since my Master's at <a href="https://sites.google.com/view/zhouyi-joey/home">NAIL@HNU</a> (supervised by Prof. Yi Zhou). 
-        I am also fortunate to have collaborated with esteemed researchers in this field, including Prof. <a href="https://www.digital-future.berlin/en/about-us/professors/prof-dr-guillermo-gallego/">Guillermo Gallego</a>, <a href="https://mpl.sist.shanghaitech.edu.cn/Director.html">Laurent Kneip</a> and <a href="https://users.umiacs.umd.edu/~fermulcm/">Cornelia Fermüller</a>.
+        <p class="w3-justify">
+          My research journey has been consistently focused on <strong>event-based vision</strong> since my Master's at <a href="https://sites.google.com/view/zhouyi-joey/home">NAIL@HNU</a>, supervised by Prof. Yi Zhou (周易). 
+          I am also fortunate to have collaborated with esteemed researchers in this field, including Prof. <a href="https://www.digital-future.berlin/en/about-us/professors/prof-dr-guillermo-gallego/">Guillermo Gallego</a>, <a href="https://mpl.sist.shanghaitech.edu.cn/Director.html">Laurent Kneip</a> and <a href="https://users.umiacs.umd.edu/~fermulcm/">Cornelia Fermüller</a>.
         </p>
-        <p class="w3-center">
-          <a href="pdf/CV2026.pdf"> CV </a> &nbsp/&nbsp
-          <a href="https://scholar.google.com/citations?user=gR9cMtgAAAAJ&hl=zh-CN"> Google Scholar </a> &nbsp/&nbsp
-          <a href="mailto:zhongyangren@hnu.edu.cn">Email</a> &nbsp/&nbsp
-          <a href="https://www.linkedin.com/in/zhongyang-ren-b28a4328a/"> LinkedIn </a> 
+        <p class="profile-links">
+          <a href="pdf/CV2026.pdf">CV</a>
+          <a href="https://scholar.google.com/citations?user=gR9cMtgAAAAJ&hl=zh-CN">Google Scholar</a>
+          <a href="mailto:zhongyangren@hnu.edu.cn">Email</a>
+          <a href="https://www.linkedin.com/in/zhongyang-ren-b28a4328a/">LinkedIn</a>
         </p>
-        </tbody></table>
+      </div>
   </div>
 
 <!-- The News Section -->
@@ -126,7 +131,7 @@
 
   </div>
  <!-- The Publications Section -->
-  <div class="w3-container w3-padding-32"" id="publications">
+  <div class="w3-container w3-padding-32" id="publications">
     <h2>Research</h2>
       	<!--<p class="w3-left-align" style="line-height:200%"></p>-->
 <h4><li><strong>ICRA 2026: <a href="">Real-time Motion Segmentation with Event-based Normal Flow</a> </strong>
@@ -268,8 +273,10 @@ function myAccFunc() {
   }
 }
 
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
+// Optional demo hook retained for old W3 templates.
+if (document.getElementById("myBtn")) {
+  document.getElementById("myBtn").click();
+}
 
 
 // Open and close sidebar
